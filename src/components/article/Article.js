@@ -1,11 +1,10 @@
-import React from 'react'
-
-const Article = () => {
+import { wrapper } from "./article.module.scss"
+const Article = ({ titletext, bodytext, authortext }) => {
     return (
-        <article>
-            <h2>Headline</h2>
-            <p>Body</p>
-            <span>Author</span>
+        <article className={wrapper}>
+            <h2>{titletext}</h2>
+            <p>{bodytext}</p>
+            <span>Author: {authortext}</span>
         </article>
     )
 }

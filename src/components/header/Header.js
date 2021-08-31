@@ -1,9 +1,9 @@
-import React from 'react'
+import { wrapper } from "./header.module.scss"
 
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
+        <div className={wrapper}>
+            <h1>Simple Articles</h1>
         </div>
     )
 }

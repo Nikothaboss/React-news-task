@@ -1,0 +1,9 @@
+@use "../../sass/partials/variables";
+@use "../../sass/partials/mixins";
+
+.wrapper{
+    background-color: variables.$primary;
+    @include mixins.flex(center);
+    width: 50%;
+    margin: auto;
+}
